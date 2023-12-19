@@ -63,6 +63,7 @@ Certifique-se de ter as bibliotecas necessárias instaladas. Utilize o seguinte 
 ```bash
 pip install pandas tqdm seaborn matplotlib transformers torch scikit-learn
 ```
+
 2. **Importação de Bibliotecas e Dados:**
 Importa as bibliotecas necessárias, incluindo o PyTorch e o Transformers.
 Carrega um conjunto de dados a partir do arquivo 'dataset_atualizado_08022022.csv'. Certifique-se de que o arquivo esteja no mesmo diretório ou forneça o caminho correto.
@@ -95,6 +96,7 @@ Certifique-se de ter espaço suficiente no dispositivo para armazenar o modelo t
 Execute o script em um ambiente Python com as bibliotecas instaladas para realizar o ajuste fino do modelo Multilingual.
 
 ### Passos para Executar os Classificadores(classificadores_BERTimbau.py e classificadores_multilingual.py)
+
 1. **Instalação de Bibliotecas:**
 Execute o seguinte comando no terminal para instalar as bibliotecas necessárias:
 
@@ -106,7 +108,7 @@ pip install -U sentence-transformers imbalanced-learn
 Importa as bibliotecas necessárias para classificadores SVM e RF.
 Carrega o conjunto de dados do arquivo 'dataset_atualizado_08022022.csv'. Certifique-se de que o arquivo esteja no mesmo diretório ou forneça o caminho correto.
 
-3.** Pré-processamento e Embedding:**
+3. **Pré-processamento e Embedding:**
 Realiza o pré-processamento nos comentários, removendo caracteres indesejados e convertendo para letras minúsculas.
 Utiliza o modelo BERTimbau para gerar embeddings dos comentários.
 
@@ -128,19 +130,18 @@ Salva o novo modelo e as métricas.
 Treina um classificador SVM usando os embeddings.
 Salva o modelo treinado e métricas de desempenho.
 Avaliação do SVM:
-
 Avalia o modelo SVM no conjunto de teste.
 Calcula métricas como precisão, recall, F1-score, AUC-ROC e gera uma matriz de confusão.
-8. **SMOTE e SVM:**
+
+9. **SMOTE e SVM:**
 Aplica a técnica SMOTE para o SVM.
 Treina um novo modelo SVM após a aplicação do SMOTE.
 Salva o novo modelo e as métricas.
 
-9. **Métricas Finais:**
+10. **Métricas Finais:**
 Salva as métricas finais em um arquivo CSV chamado 'metricasBERTimbau0506.csv'.
 
-10. **Observações:**
-
+11. **Observações:**
 Certifique-se de ter os conjuntos de dados e os modelos treinados anteriormente para análise.
 As métricas finais incluem precisão, recall, F1-score, AUC-ROC e informações detalhadas sobre a matriz de confusão para cada classe.
 Realize os ajustes necessários nos caminhos de arquivos conforme a sua estrutura de diretórios.
